@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+</head>
+<body>
+
+<h1 id="title">How was your stay?</h1>
+
+<p id="description">
+    We really appreciate you coming to visit. So that we can continue to improve and provide the best service possible please take a moment to answer the following;</p>
+</p>
+
+<form id="survey-form">
+    <label for="fullname" id="name-label">Full Name:</label>
+    <br>
+    <input type="text" id="name" name="fullname" required
+    placeholder="Thom Yorke">
+    <br>
+    <br>
+    <label for="emailaddress" id="email-label">Email Address:</label>
+    <br>
+    <input type="email" id="email" name="emailaddress" required
+    placeholder="yorkeyboi@thedailymail.com">
+    <br>
+    <br>
+    <label for="numofnights" id="number-label">How many nights did you stay?</label>
+    <br>
+    <input type="number" id="number" name="numofnights" min="1" max=" 365" required
+    placeholder="225">
+<br>
+<br>
+    <label for="roompick">Which room did you stay in?</label>
+    <br>
+    <select id="dropdown" name="roompick">
+        <option value="Pink Room">Pink Room</option>
+        <option value="Carnival Room">Carnival Room</option>
+        <option value="Fishbowl">Fishbowl</option>
+        <option value="Green Room">Green Room</option>
+    </select>
+<br>
+<br>
+    <input type="radio" name="StayAgainChoice" value="StayAgain" id="StayAgain">
+    <label for="StayAgain">I'd Stay Again!</label><br>
+    <input type="radio" name="StayAgainChoice" value="MaybeStayAgain" id="MaybeStayAgain">
+    <label for="MaybeStayAgain">I would consider staying again</label><br>
+    <input type="radio" name="StayAgainChoice" value="WouldntStayAgain" id="WouldntStayAgain">
+    <label for="WouldntStayAgain">I wouldn't stay again :(</label>
+<br>
+<br>
+Which meals did you have during your stay?
+<br>
+<input type="checkbox" id="meal1" name="breakfast" value="Breakfast">
+  <label for="meal1">Breakfast</label><br>
+  <input type="checkbox" id="meal2" name="lunch" value="Lunch">
+  <label for="meal2">Lunch</label><br>
+  <input type="checkbox" id="meal3" name="dinner" value="Dinner">
+  <label for="meal3">Dinner</label>
+<br>
+<br>
+  <textarea rows=”5” cols=”40”>Any other comments</textarea>
+<br>
+<br>
+<input type="submit" value="Submit my Answers" id="submit">
+</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
